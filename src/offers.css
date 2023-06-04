@@ -1,0 +1,124 @@
+.offers-panel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 80%;
+	background-color: black;
+	align-items: center;
+}
+.offers-panel section {
+	height: 80%;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: 1s;
+}
+
+.offers-option {
+	background-color: rgba(255, 217, 0, 0.897);
+	padding: 4%;
+	transition: 0.3s ease-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 60%;
+	justify-content: space-between;
+	background-color: transparent;
+	width: 15%;
+	clip-path: polygon(
+		50% 0%,
+		100% 0,
+		100% 37%,
+		100% 60%,
+		100% 92%,
+		94% 100%,
+		0 100%,
+		0 44%,
+		0 0
+	);
+}
+.offers-panel.observe .offers-option {
+	animation: id;
+}
+@keyframes id {
+	from {
+		transform: translateX(-100vw);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+.offers-panel.observe .offers-option:nth-child(4) {
+	animation-duration: 600ms;
+}
+.offers-panel.observe .offers-option:nth-child(3) {
+	animation-duration: 800ms;
+}
+.offers-panel.observe .offers-option:nth-child(2) {
+	animation-duration: 1000ms;
+}
+.offers-panel.observe .offers-option:nth-child(1) {
+	animation-duration: 1200ms;
+}
+.offers-option:hover {
+	background-color: rgba(255, 217, 0, 0.897);
+}
+.offers-option:hover nav span {
+	color: black;
+}
+.offers-option:hover button {
+	transition: 0.3s ease-in-out;
+	background-color: black;
+	color: white;
+}
+.offers-option button:hover {
+	transform: scale(1.2);
+}
+.offers-option button {
+	font-size: 20px;
+	border: none;
+	width: 60%;
+	height: 10%;
+	background-color: rgba(255, 217, 0, 0.897);
+	color: black;
+	font-family: 'Bebas Neue';
+}
+.offers-panel nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.offers-panel nav h2 {
+	font-family: 'Bebas Neue';
+	color: white;
+	font-size: 50px;
+}
+.offers-panel nav span {
+	color: gold;
+	font-size: 30px;
+}
+@media only screen and (max-width: 1000px) {
+	.offers-panel section {
+		width: 100%;
+	}
+	.mid-elements {
+		height: 70%;
+	}
+	.offers-panel nav h2 {
+		font-size: 25px;
+	}
+	.offers-option {
+		height: 35%;
+	}
+	.offers-option button {
+		font-size: 15px;
+		width: 80%;
+	}
+	.offers-panel nav span {
+		font-size: 20px;
+	}
+	.offers-option button {
+		height: 20%;
+	}
+}
