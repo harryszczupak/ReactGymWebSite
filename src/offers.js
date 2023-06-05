@@ -1,5 +1,6 @@
 import './offers.css';
 import { useInView } from 'react-hook-inview';
+
 const Offers = () => {
 	const [ref, isVisible] = useInView();
 

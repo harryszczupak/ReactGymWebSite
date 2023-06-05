@@ -1,7 +1,7 @@
 import logo from './Photos/logo.jpg';
 import './Head.css';
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 const Head = () => {
 	const MyRef = useRef();
 	console.log(MyRef.current);
@@ -18,19 +18,19 @@ const Head = () => {
 
 				<ul>
 					<li>
-						<Link to='/'>O nas</Link>
+						<Link to='/#info-panel'>O nas</Link>
 					</li>
 					<li>
-						<Link to='/Register'>Zarejestruj się</Link>
+						<a>Zarejestruj się</a>
 					</li>
 					<li>
-						<Link>Cennik</Link>
+						<Link to='/#offers-section'>Cennik</Link>
 					</li>
 					<li>
-						<Link to='/Gallery'>Galeria</Link>
+						<a>Galeria</a>
 					</li>
 					<li>
-						<Link>Kontakt</Link>
+						<a>Kontakt</a>
 					</li>
 				</ul>
 			</nav>

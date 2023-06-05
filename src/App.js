@@ -1,28 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import Head from './Head';
 import MainBanner from './MainBanner';
 import Offers from './offers';
-
-import { Route, Routes } from 'react-router-dom';
-
+import About from './About';
 function App() {
 	return (
-		<Routes>
-			<Route
-				path='/'
-				element={
-					<div className='container'>
-						<div className='top-elements'>
-							<Head></Head>
-							<MainBanner></MainBanner>
-						</div>
-						<div className='mid-elements'>
-							<Offers></Offers>
-						</div>
-					</div>
-				}></Route>
-		</Routes>
+		<div className='container'>
+			<div className='top-elements'>
+				<Head></Head>
+				<MainBanner></MainBanner>
+			</div>
+			<div className='About-section' id='info-panel'>
+				<About></About>
+			</div>
+			<div id='offers-section' className='mid-elements'>
+				<Offers></Offers>
+			</div>
+		</div>
 	);
 }
 
