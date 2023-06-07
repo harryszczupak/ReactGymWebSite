@@ -1,0 +1,38 @@
+.gallery-container {
+	width: 100%;
+	background-color: black;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-gallery {
+	background-position: center;
+	width: 40%;
+	height: 70%;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: 0.3s ease-in-out;
+}
+.Arrows {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	color: white;
+	border: none;
+}
+.Arrows svg {
+	transition: 0.3s ease-in-out;
+}
+.Arrows svg:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.main-gallery.visible {
+	transform: translateX(0%);
+	opacity: 1;
+}

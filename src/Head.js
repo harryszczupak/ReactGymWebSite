@@ -4,7 +4,6 @@ import { useRef } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 const Head = () => {
 	const MyRef = useRef();
-	console.log(MyRef.current);
 
 	return (
 		<header>
@@ -27,7 +26,7 @@ const Head = () => {
 						<Link to='/#offers-section'>Cennik</Link>
 					</li>
 					<li>
-						<a>Galeria</a>
+						<Link to='/#gallery-section'>Galeria</Link>
 					</li>
 					<li>
 						<a>Kontakt</a>
